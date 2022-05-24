@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		42116DEC283588CA002274ED /* PostagensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42116DEB283588CA002274ED /* PostagensTableViewCell.swift */; };
+		4222F58F283C4844005997A3 /* GaleriaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222F58E283C4844005997A3 /* GaleriaCollectionViewController.swift */; };
+		4222F591283C49CF005997A3 /* GaleriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222F590283C49CF005997A3 /* GaleriaCollectionViewCell.swift */; };
+		423ECB632838045F00405D95 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423ECB622838045F00405D95 /* UserTableViewCell.swift */; };
 		428070B928351E39001182E7 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428070B828351E39001182E7 /* CadastroViewController.swift */; };
 		428070BB28352306001182E7 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428070BA28352306001182E7 /* PrincipalViewController.swift */; };
 		428070BD28352314001182E7 /* UsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428070BC28352314001182E7 /* UsuariosViewController.swift */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		42116DEB283588CA002274ED /* PostagensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostagensTableViewCell.swift; sourceTree = "<group>"; };
+		4222F58E283C4844005997A3 /* GaleriaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaCollectionViewController.swift; sourceTree = "<group>"; };
+		4222F590283C49CF005997A3 /* GaleriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaCollectionViewCell.swift; sourceTree = "<group>"; };
+		423ECB622838045F00405D95 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		428070B828351E39001182E7 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		428070BA28352306001182E7 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		428070BC28352314001182E7 /* UsuariosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		423ECB612837FCBE00405D95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42E3A07A283470DA00AB5BD0 /* HomeViewController.swift */,
+				42E3A08B2834752A00AB5BD0 /* LoginViewController.swift */,
+				428070B828351E39001182E7 /* CadastroViewController.swift */,
+				428070BA28352306001182E7 /* PrincipalViewController.swift */,
+				428070BC28352314001182E7 /* UsuariosViewController.swift */,
+				42DDFF6E28356E9700EC06FB /* PostagemViewController.swift */,
+				42116DEB283588CA002274ED /* PostagensTableViewCell.swift */,
+				423ECB622838045F00405D95 /* UserTableViewCell.swift */,
+				4222F58E283C4844005997A3 /* GaleriaCollectionViewController.swift */,
+				4222F590283C49CF005997A3 /* GaleriaCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		42E3A06A283470DA00AB5BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +112,7 @@
 				42E3A08A2834751700AB5BD0 /* View */,
 				42E3A076283470DA00AB5BD0 /* AppDelegate.swift */,
 				42E3A078283470DA00AB5BD0 /* SceneDelegate.swift */,
-				42E3A07C283470DA00AB5BD0 /* Main.storyboard */,
 				42E3A08D2834764A00AB5BD0 /* GoogleService-Info.plist */,
-				42E3A081283470DC00AB5BD0 /* LaunchScreen.storyboard */,
 				42E3A084283470DC00AB5BD0 /* Info.plist */,
 				4291303528347B3B003D26D4 /* Media.xcassets */,
 			);
@@ -101,13 +122,9 @@
 		42E3A08A2834751700AB5BD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				42E3A07A283470DA00AB5BD0 /* HomeViewController.swift */,
-				42E3A08B2834752A00AB5BD0 /* LoginViewController.swift */,
-				428070B828351E39001182E7 /* CadastroViewController.swift */,
-				428070BA28352306001182E7 /* PrincipalViewController.swift */,
-				428070BC28352314001182E7 /* UsuariosViewController.swift */,
-				42DDFF6E28356E9700EC06FB /* PostagemViewController.swift */,
-				42116DEB283588CA002274ED /* PostagensTableViewCell.swift */,
+				423ECB612837FCBE00405D95 /* Controller */,
+				42E3A07C283470DA00AB5BD0 /* Main.storyboard */,
+				42E3A081283470DC00AB5BD0 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,10 +257,13 @@
 				428070BD28352314001182E7 /* UsuariosViewController.swift in Sources */,
 				42E3A07B283470DA00AB5BD0 /* HomeViewController.swift in Sources */,
 				42E3A077283470DA00AB5BD0 /* AppDelegate.swift in Sources */,
+				423ECB632838045F00405D95 /* UserTableViewCell.swift in Sources */,
 				428070BB28352306001182E7 /* PrincipalViewController.swift in Sources */,
 				428070B928351E39001182E7 /* CadastroViewController.swift in Sources */,
 				42DDFF6F28356E9800EC06FB /* PostagemViewController.swift in Sources */,
+				4222F58F283C4844005997A3 /* GaleriaCollectionViewController.swift in Sources */,
 				42116DEC283588CA002274ED /* PostagensTableViewCell.swift in Sources */,
+				4222F591283C49CF005997A3 /* GaleriaCollectionViewCell.swift in Sources */,
 				42E3A079283470DA00AB5BD0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

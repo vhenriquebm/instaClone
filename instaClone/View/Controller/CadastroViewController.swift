@@ -19,7 +19,6 @@ class CadastroViewController: UIViewController {
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var password: UITextField!
 
     @IBAction func register(_ sender: Any) {
@@ -38,7 +37,8 @@ class CadastroViewController: UIViewController {
                 if let idUsuario = result?.user.uid {
                     self.firetore.collection("usuarios").document(idUsuario).setData([
                         "nome":name,
-                        "email":email
+                        "email":email,
+                        "id": idUsuario
                 ])
                 }
             }
